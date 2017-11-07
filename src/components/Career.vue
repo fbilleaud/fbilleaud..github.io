@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="Career" class="category">
+  <div id="career" class="category">
     <title-cat title="Parcours"></title-cat>
     <div class="content">
       <div id="careerContent">

@@ -3,6 +3,7 @@
 #header{
   position: fixed;
   z-index: 100;
+  top: 0px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -18,6 +19,8 @@
     margin-left: 0px;
     img {
       width: 32px;
+      transform-origin: top;
+      transition: transform 0.5s;
     }
   }
 
@@ -88,6 +91,12 @@
 
       img {
         width: 64px;
+      }
+
+      &.scroll{
+        img {
+          transform: scale(0.45) translateY(-5px);
+        }
       }
     }
 

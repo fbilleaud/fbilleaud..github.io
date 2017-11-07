@@ -15,17 +15,14 @@
       a{
         width: 50%;
         margin-top: 1rem;
+        color: $black;
+
         img{
           width: 60px;
         }
 
         p{
           font-size: 0.8rem;
-          color: $black;
-        }
-
-        &:last-child{
-          padding-right: 0px;
         }
       }
     }

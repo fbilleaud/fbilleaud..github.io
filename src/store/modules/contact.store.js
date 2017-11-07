@@ -1,98 +1,36 @@
 const state = {
-  contacts : [
+  contacts: [
     {
-      id: 1,
-      title: 'Front-End',
-      icon: 'front',
-      skills: [
-        {
-          id: 1,
-          logo: 'html5',
-          name: 'HTML 5 / CSS 3',
-          value: 100
-        },
-        {
-          id: 2,
-          logo: 'es6',
-          name: 'Javascript ES6',
-          value: 90
-        },
-        {
-          id: 3,
-          logo: 'sass',
-          name: 'Sass',
-          value: 100
-        }
-      ]
+      id: '1',
+      title: 'Envoyer un email',
+      icon: 'email',
+      text: 'fbilleaud@gmail.com',
+      href: 'mailto:fbilleaud@gmail.com',
+      target: '_self'
     },
     {
-      id: 2,
-      title: 'Frameworks',
-      icon: 'framework',
-      skills: [
-        {
-          id: 1,
-          logo: 'vue',
-          name: 'VueJS 2',
-          value: 80
-        },
-        {
-          id: 2,
-          logo: 'angular',
-          name: 'Angular JS',
-          value: 100
-        },
-        {
-          id: 3,
-          logo: 'jQuery',
-          name: 'jQuery',
-          value: 100
-        }
-      ]
+      id: '2',
+      title: 'Appeler moi',
+      icon: 'tel',
+      text: '+49 157 727 38 756',
+      href: 'tel:+4915772738756',
+      target: '_self'
     },
     {
-      id: 3,
-      title: 'Outils / Autres',
-      icon: 'tools',
-      skills: [
-        {
-          id: 1,
-          logo: 'webpack',
-          name: 'Webpack 2',
-          value: 80
-        },
-        {
-          id: 2,
-          logo: 'node',
-          name: 'Node JS',
-          value: 70
-        },
-        {
-          id: 3,
-          logo: 'gulp',
-          name: 'Gulp',
-          value: 90
-        }
-      ]
+      id: '3',
+      title: 'Afficher twitter',
+      icon: 'twitter',
+      text: '@elBiyo',
+      href: 'https://twitter.com/El_Biyo',
+      target: '_blank'
     },
     {
-      id: 4,
-      title: 'Langues',
-      icon: 'language',
-      skills: [
-        {
-          id: 1,
-          logo: 'fr',
-          name: 'Français',
-          value: 100
-        },
-        {
-          id: 2,
-          logo: 'en',
-          name: 'Anglais',
-          value: 70
-        }
-      ]
+      id: '3',
+      title: 'Afficher github',
+      icon: 'github',
+      text: 'fbilleaud',
+      href: 'https://github.com/fbilleaud',
+      target: '_blank'
     }
   ]
 }
@@ -102,7 +40,7 @@ const mutations = {
 }
 
 const getters = {
-  skills: states => states.skills
+  contacts: states => states.contacts
 }
 
 const actions = {

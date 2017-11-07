@@ -5,22 +5,11 @@
       <div class="contactsContent">
         <p>Je serais ravie de travailler avec vous, n’hésites pas à me contacter :</p>
         <div class="contacts">
-          <a href="#" title="Envoyer un email">
+          <!-- <a href="contact" v-for="contact in contacts" :target="contact.target" :title="contact.title">
             <img src="../assets/images/icons/icon_email.svg" alt="">
             <p>fbilleaud@gmail.com</p>
-          </a>
-          <a href="#" title="Appeler">
-            <img src="../assets/images/icons/icon_tel.svg" alt="">
-            <p>+49 157 727 38 756</p>
-          </a>
-          <a href="#" title="Afficher twitter">
-            <img src="../assets/images/icons/icon_twitter.svg" alt="">
-            <p>@elBiyo</p>
-          </a>
-          <a href="#" title="Afficher github">
-            <img src="../assets/images/icons/icon_github.svg" alt="">
-            <p>ElBiyo</p>
-          </a>
+          </a> -->
+          <contact v-for="contact in contacts" :data="contact" :text="true" :key="contact.id"></contact>
         </div>
       </div>
     </div>
@@ -29,11 +18,19 @@
 
 <script>
 import TitleCat from '@/components/_shared/TitleCat'
+import Contact from '@/components/_shared/Contact'
+import store from '@/store'
+import {mapGetters} from 'vuex'
 
 export default {
   name: 'Contacts',
+  store,
   components: {
-    TitleCat
+    TitleCat,
+    Contact
+  },
+  computed: {
+    ...mapGetters(['contacts'])
   }
 }
 </script>
