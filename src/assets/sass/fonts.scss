@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
+
+
+.bold{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}
+
+.regular{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+}
+
+.light{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+}
+
+body{
+	@extend .regular;
+}

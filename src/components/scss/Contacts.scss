@@ -1,0 +1,48 @@
+@import "../../assets/sass/colors";
+
+#contacts {
+
+  .contactsContent{
+    width: 100%;
+    max-width: 800px;
+
+    .contacts{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 100px;
+
+      a{
+        width: 50%;
+        margin-top: 1rem;
+        img{
+          width: 60px;
+        }
+
+        p{
+          font-size: 0.8rem;
+          color: $black;
+        }
+
+        &:last-child{
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  #contacts {
+    .contactsContent{
+      .contacts{
+        a{
+          width: auto;
+        }
+      }
+    }
+  }
+
+}

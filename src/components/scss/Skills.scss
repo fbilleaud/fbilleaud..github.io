@@ -1,0 +1,23 @@
+#Skills {
+  .content{
+    .skillsContent{
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+// media queries
+
+@media (min-width: 768px) {
+  #Skills {
+    .content{
+      .skillsContent{
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+    }
+  }
+}

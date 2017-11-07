@@ -1,0 +1,49 @@
+@import "../../assets/sass/colors";
+@import "../../assets/sass/fonts";
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  @extend .regular;
+}
+
+#app {
+  text-align: center;
+
+  .category{
+    position: relative;
+    .content{
+      min-height: 100vh;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      padding-top: 3.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .subContent{
+        display: flex;
+        align-content: flex-start;
+      }
+    }
+  }
+
+  .link {
+    color: $yellow;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #app {
+    .category {
+      .content{
+        padding-top: 0rem;
+      }
+    }
+  }
+}

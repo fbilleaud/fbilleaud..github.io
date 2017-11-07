@@ -1,0 +1,36 @@
+.SkillsCategory {
+  width: 100%;
+
+  .headerSkillsCat{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    img{
+      height: 42px;
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+// media queries
+
+@media (min-width: 768px) {
+  .SkillsCategory{
+
+    .headerSkillsCat{
+      display: block;
+      img{
+        margin-right: 0rem;
+      }
+    }
+
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .SkillsCategory{
+    width: 20%;
+  }
+}

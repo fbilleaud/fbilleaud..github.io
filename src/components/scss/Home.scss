@@ -1,0 +1,69 @@
+@import "../../assets/sass/colors";
+@import "../../assets/sass/fonts";
+
+#home{
+  background-color: $black;
+  .content{
+    @extend .bold;
+    text-align: center;
+
+    h1{
+      color: $yellow;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 4rem;
+      margin: 0px;
+    }
+
+    h2{
+      color: white;
+      font-size: .75rem;
+      font-weight: 700;
+      line-height: 2rem;
+      margin: 0px;
+    }
+
+    .contact{
+      display: flex;
+      justify-content: center;
+
+      a{
+        margin: 0rem 1rem;
+        margin-top: 1rem;
+        img{
+          width: 28px;
+        }
+
+        &:last-child{
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+
+// media queries
+
+@media (min-width: 768px) {
+  #home{
+    .content{
+      text-align: left;
+
+      h1{
+        font-size: 3rem;
+      }
+
+      h2{
+        font-size: 2rem;
+        margin-left: 17rem;
+      }
+
+
+      .contact{
+        justify-content: flex-end;
+      }
+    }
+
+  }
+}
