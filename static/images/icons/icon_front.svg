@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 214 128" style="enable-background:new 0 0 214 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FBB03B;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FBB03B;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:#FBB03B;}
+	.st3{fill:none;stroke:#FBB03B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="email">
+</g>
+<g id="github">
+</g>
+<g id="tel">
+</g>
+<g id="twitter">
+</g>
+<g id="front">
+	<g>
+		<g>
+			<path class="st2" d="M88.5,19.4V42L55.6,61.5c-0.9,0.5-1.5,1.5-1.5,2.6c0,1.1,0.6,2,1.5,2.6l32.9,19.5v22.4L11.2,64.1L88.5,19.4
+				 M91.5,14.2L5.2,64.1l86.3,49.7V84.5L57.1,64.1l34.3-20.4V14.2L91.5,14.2z"/>
+		</g>
+		<g>
+			<path class="st2" d="M125.5,19.4l77.3,44.5l-77.3,44.7V86l32.9-19.5c0.9-0.5,1.5-1.5,1.5-2.6c0-1.1-0.6-2-1.5-2.6l-32.9-19.5
+				V19.4 M122.5,14.2v29.3l34.3,20.4l-34.3,20.4v29.5l86.3-49.9L122.5,14.2L122.5,14.2z"/>
+		</g>
+	</g>
+</g>
+<g id="tools">
+</g>
+<g id="framework">
+</g>
+<g id="language">
+</g>
+</svg>
