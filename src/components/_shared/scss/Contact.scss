@@ -1,0 +1,13 @@
+.contact{
+  img{
+    transform: translateY(-50px);
+  }
+  p{
+    transform: translateY(50px);
+  }
+
+  img, p{
+    opacity: 0;
+    transition: all 0.8s;
+  }
+}
