@@ -2,6 +2,7 @@ const state = {
   startJob: 1193871600000,
   jobs: [
     {
+      id: 1,
       logo: 'strass',
       company: 'Strass Production',
       location: 'Paris',
@@ -10,6 +11,7 @@ const state = {
       end: 1241128800000
     },
     {
+      id: 2,
       logo: '1000Mercis',
       company: '1000 Mercis',
       location: 'Paris',
@@ -21,6 +23,7 @@ const state = {
       end: 1380578400000
     },
     {
+      id: 3,
       logo: 'numberly',
       company: 'Numberly 1000 Mercis group',
       location: 'Londres / Berlin',
@@ -31,6 +34,7 @@ const state = {
       end: 1435701600000
     },
     {
+      id: 4,
       logo: 'ocito',
       company: 'Ocito 1000 Mercis group',
       location: 'Berlin',
@@ -42,6 +46,7 @@ const state = {
       end: 1498860000000
     },
     {
+      id: 5,
       logo: 'webportage',
       company: 'Webportage',
       location: 'Berlin',

@@ -35,6 +35,30 @@ export default {
     Skills,
     Contacts,
     FooterApp
+  },
+  methods: {
+    intersection (entries) {
+      entries.forEach(entry => {
+        if (entry.target.id !== 'home') {
+          if (entry.intersectionRatio > 0.4) {
+            entry.target.classList.add('visible')
+          } else {
+            entry.target.classList.remove('visible')
+          }
+        }
+      })
+    }
+  },
+  mounted () {
+    let observerOptions = {
+      threshold: [0.4]
+    }
+    let observer = new IntersectionObserver(this.intersection, observerOptions)
+
+    let items = document.querySelectorAll('.category')
+    items.forEach(item => {
+      observer.observe(item)
+    })
   }
 }
 </script>

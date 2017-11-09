@@ -1,7 +1,11 @@
 <template lang="html">
   <div class="job" :class="typeClass" :style="jobPosition">
+
+    <div class="line"></div>
+
     <p class="date" v-if="data.end">{{ data.end | date('year')}}</p>
     <p class="date" v-else>Actuellement</p>
+
     <div class="contentJob">
       <img :src="jobLogo" alt="">
       <h3>{{ data.company }}</h3>
@@ -55,6 +59,14 @@ export default {
 
       return `top: ${top}px; right: ${right}%`
     }
+  },
+  mounted () {
+    // add animation delay
+    let delay = `${(this.data.id - 1) * 0.5}s`
+    console.log(this.data)
+    this.$el.getElementsByClassName('line')[0].style.transitionDelay = delay
+    this.$el.getElementsByClassName('contentJob')[0].style.transitionDelay = delay
+    this.$el.getElementsByClassName('date')[0].style.animationDelay = delay
   }
 }
 </script>

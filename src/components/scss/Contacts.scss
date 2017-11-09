@@ -2,6 +2,15 @@
 
 #contacts {
 
+  &.visible{
+    .contact{
+      img,p {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+
   .contactsContent{
     width: 100%;
     max-width: 800px;

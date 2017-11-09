@@ -1,4 +1,19 @@
 #skills {
+
+  &.visible{
+    //skill component animation
+    .Skill{
+      .name {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      .progress {
+        transform: scaleX(1);
+      }
+    }
+
+  }
+
   .content{
     .skillsContent{
       width: 100%;
@@ -6,6 +21,7 @@
     }
   }
 }
+
 
 // media queries
 

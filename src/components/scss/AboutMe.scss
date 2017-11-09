@@ -2,13 +2,29 @@
 @import "../../assets/sass/fonts";
 
 #aboutME {
-  
+
+  &.visible{
+    #profil, #about{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  #profil, #about{
+    transition: all 1s;
+  }
+
   #profil{
     display: none;
+    opacity: 0;
+    transform: translateX(-100px);
   }
 
   #about{
     text-align: left;
+
+    opacity: 0;
+    transform: translateX(100px);
 
     p:first-child{
       margin-top: 0px;

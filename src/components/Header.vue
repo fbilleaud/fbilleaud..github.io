@@ -58,10 +58,10 @@ export default {
     }
   },
   mounted () {
-    document.addEventListener('scroll', this.onScroll)
+    window.addEventListener('scroll', this.onScroll)
   },
   unmounted () {
-    document.removeEventListener('scroll', this.onScroll)
+    window.removeEventListener('scroll', this.onScroll)
   }
 }
 </script>

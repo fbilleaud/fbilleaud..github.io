@@ -8,27 +8,36 @@
   width: 100%;
   margin: 1.5rem 0rem;
 
-  img{
-    height: 25px;
-    max-width: 110px;
-    margin-bottom: 10px;
+  .contentJob{
+
+    img{
+      height: 25px;
+      max-width: 110px;
+      margin-bottom: 10px;
+    }
+
+    h3, p{
+      margin: 0px;
+    }
+
+    h3{
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .details{
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+      margin-bottom: 0.4rem;
+      @extend .bold;
+    }
+
+    .descriptions{
+      font-size: 0.7rem;
+      line-height: 0.7rem;
+    }
   }
 
-  h3, p{
-    margin: 0px;
-  }
-
-  h3{
-    font-size: 1.1rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .details{
-    font-size: 0.8rem;
-    line-height: 0.9rem;
-    margin-bottom: 0.4rem;
-    @extend .bold;
-  }
 
   .date {
     font-size: 1rem;
@@ -36,10 +45,6 @@
     margin-bottom: 1rem;
   }
 
-  .descriptions{
-    font-size: 0.7rem;
-    line-height: 0.7rem;
-  }
 }
 
 
@@ -57,21 +62,50 @@
     position: absolute;
     height: 265px;
     width: 15%;
-    border-right: 1px solid $yellow;
     padding-right: 1rem;
     margin: 0rem;
+    overflow: hidden;
+
+    .line{
+      position: absolute;
+      transform: scaleY(0);
+      transition: all 0.8s;
+      width: 1px;
+      height: 100%;
+      top: 0px;
+      right: 0px;
+      background-color: $yellow;
+    }
+
+    .contentJob{
+      transition: all 0.8s;
+      opacity: 0;
+      transform: translateX(100px);
+    }
 
     &.even {
+
+      .line{
+        transform-origin: bottom;
+      }
+
       .date {
         position: absolute;
         bottom: 10px;
         right: 1rem;
+        transform: translateY(50px);
       }
     }
 
     &.odd {
+
+      .line{
+        transform-origin: top;
+      }
+
       .date {
         margin-top: 10px;
+        transform: translateY(-50px);
       }
 
       .contentJob {

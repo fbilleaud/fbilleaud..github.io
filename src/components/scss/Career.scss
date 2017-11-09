@@ -1,7 +1,56 @@
 @import "../../assets/sass/colors";
 
 #career {
+
+  &.visible{
+    .jobs{
+      .job{
+        .line{
+          transform: scaleY(1);
+        }
+        .contentJob{
+          opacity: 1;
+          transform: translateX(0px);
+        }
+
+        &.even {
+          .date{
+            animation: dateEvenAnim 1s forwards;
+          }
+        }
+
+        &.odd {
+          .date{
+            animation: dateOddAnim 1s forwards;
+          }
+        }
+
+      }
+    }
+  }
+
+  @keyframes dateEvenAnim {
+    60% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+
+  @keyframes dateOddAnim {
+    60% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+
   #careerContent {
+
     width: 100%;
     position: relative;
 

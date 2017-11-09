@@ -2,7 +2,7 @@
   <div class="Skill">
     <img :src="logoSrc" alt="">
     <div class="details">
-      <p>{{ data.name }}</p>
+      <p class="name">{{ data.name }}</p>
       <div class="value">
         <div class="progress" :style="{'width': progressWidth}"></div>
       </div>
@@ -21,6 +21,12 @@ export default {
     progressWidth () {
       return `${this.data.value}%`
     }
+  },
+  mounted () {
+    // add animation delay
+    let delay = `${(this.data.id - 1) * 0.2}s`
+    this.$el.getElementsByClassName('name')[0].style.transitionDelay = delay
+    this.$el.getElementsByClassName('progress')[0].style.transitionDelay = delay
   }
 }
 </script>
